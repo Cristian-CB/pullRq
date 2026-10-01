@@ -1,19 +1,14 @@
 lista = [2, 4, 1, 3, 7, 9]
-resultado = lista[-2:] + lista [:-2]
-direccion = "izq"
 
+def moverPosiciones(vector,n,dir):
 
-
-
-def moverPosicionesDerecha(lista,n):
-
-    if direccion == "izq":
-        resultado = lista[n:] + lista[:n]
+    if dir == "izq":
+        resultado = vector[n:] + vector[:n]
         return resultado
 
     else:
-        resultado = lista[-n:] + lista[:-n]
+        resultado = vector[-n:] + vector[:-n]
         return resultado
 
 
-print(moverPosicionesDerecha(lista,2))
+print(moverPosiciones(lista,2,"izq"))
